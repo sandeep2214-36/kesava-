@@ -1,0 +1,16 @@
+{
+  "name": "buildforge-ai",
+  "version": "1.0.0",
+  "description": "BuildForge AI — Full-stack AI coding agent that builds apps and games from natural language",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "keywords": ["ai", "coding-agent", "code-generation", "buildforge"],
+  "author": "BuildForge AI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
