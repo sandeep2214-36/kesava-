@@ -309,7 +309,7 @@ async function handleBuild(userRequest) {
   } catch (err) {
     clearInterval(progressInterval);
     log('Build failed: ' + err.message, 'error');
-    addMessage('ai', `Sorry, something went wrong: ${err.message}`);
+    addMessage('ai', `Sorry, something went wrong:\n${err.message || "Unknown error"}`);
     setStatus('Error', 'error');
   } finally {
     hideProgress();
